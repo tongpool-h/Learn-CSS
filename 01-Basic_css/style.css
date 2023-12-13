@@ -6,7 +6,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-nav {
+#nav-bar {
     height: 80px;
     background-color: #1b1b1b;
     display: flex;
@@ -15,22 +15,22 @@ nav {
     padding: 0px 50px 0px 100px;
 }
 
-nav .logo {
+.logo {
     font-size: 33px;
     color: #fad105;
     font-weight: 600;
 }
 
-nav ul {
+.nav-bar-links {
     display: flex;
     list-style: none;
 }
 
-li {
+.nav-bar-links li {
     margin: 0 5px;
 }
 
-nav ul li a {
+.nav-bar-links li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
@@ -41,21 +41,21 @@ nav ul li a {
     transition: all 0.3s ease;
 }
 
-nav ul li a:hover,
-nav ul li a.active {
+.nav-bar-links li a:hover,
+.nav-bar-links a.active {
     background-color: #fad105;
     color: #1b1b1b;
 }
 
-nav .menu-btn i {
+/* nav .menu-btn i {
     color: #fff;
     font-size: 22px;
     cursor: pointer;
     display: none;
-}
+} */
 
-.detail {
-    height: 70vh;
+.profile {
+    height: 70vh; /* 1vh = 1%*/
     background-color: #fff;
     display: flex;
     align-items: center;
@@ -66,17 +66,17 @@ nav .menu-btn i {
     gap: 3rem;
 }
 
-.detail img {
+.profile img {
     width: 400px;
     height: 400px;
 }
 
-.detail .text-display {
+.profile .text-display {
     font-weight: 600;
     font-size: 2rem;
 }
 
-.detail .text-display .btn-more {
+.profile .text-display .btn-more {
     background-color: black;
     color: white;
     padding: 15px 25px;
@@ -85,14 +85,14 @@ nav .menu-btn i {
     font-size: 2rem;
 }
 
-.detail .text-display a:hover {
+.profile .text-display a:hover {
     background-color: white;
     color: black;
     border-color: #fad105;
     border-style: solid;
 }
 
-@media(max-width: 940px) {
+ /* @media(max-width: 940px) {
     nav ul {
         position: fixed;
         top: 80px;
@@ -115,4 +115,4 @@ nav .menu-btn i {
         color: cyan;
         background: none;
     }
-}
+}  */
